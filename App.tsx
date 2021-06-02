@@ -8,16 +8,21 @@
  * @format
  */
 
-import React from 'react';
+import React, { Component, ReactNode } from 'react';
+import { RNCamera } from 'react-native-camera'
+import DocumentPicker, { DocumentPickerResponse } from 'react-native-document-picker'
+
 import {
   FlatList,
   SafeAreaView,
   ScrollView,
   StatusBar,
+  Alert,
   StyleSheet,
   Text,
   useColorScheme,
   View,
+  Button,
 } from 'react-native';
 
 import {
@@ -56,18 +61,35 @@ const Section: React.FC<{
   );
 };
 
-const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+class App extends Component {
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  camera: RNCamera | null = null
+
+  backgroundStyle = {
+    backgroundColor: Colors.lighter,
   };
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <ScrollView
+  // constructor(props: any) {
+  //   super(props)
+  //   this.camera;
+  // }
+
+  render(): ReactNode {
+    return <View style={styles.container}>
+        {/* <RNCamera
+          type={RNCamera.Constants.Type.back}
+          style={{ flex: 1, alignItems: 'center' }}
+          ref={ref => {
+            this.camera = ref
+          }}
+        /> */}
+        <Button
+        title="load"
+        onPress={loadFile}
+        />
+      {/* <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+        style={this.backgroundStyle}>
         <FlatList data={messages()}
           renderItem={({ item }) =>
             <Text style={[
@@ -75,9 +97,9 @@ const App = () => {
               {
                 textAlign: item.align === "right" ? "right" : "left"
               }]}>{item.key}</Text>} />
-      </ScrollView>
-    </SafeAreaView>
-  );
+      </ScrollView> */}
+    </View>
+  }
 };
 
 const messages = () => {
@@ -89,7 +111,61 @@ const messages = () => {
   ];
 }
 
+async function loadFile() {
+  try {
+    const res = await DocumentPicker.pick({
+      type: [DocumentPicker.types.allFiles],
+    });
+    console.log(
+      res.uri,
+      res.type, // mime type
+      res.name,
+      res.size
+    );
+    uploadImage(res);
+  } catch (err) {
+    if (DocumentPicker.isCancel(err)) {
+      // User cancelled the picker, exit any dialogs or menus and move on
+    } else {
+      throw err;
+    }
+  }
+}
+
+let uploadImage = async (singleFile: DocumentPickerResponse) => {
+  //Check if any file is selected or not
+  if (singleFile != null) {
+    //If file selected then create FormData
+    const fileToUpload = singleFile;
+    const data = new FormData();
+    data.append('name', fileToUpload.name);
+    data.append('file_attachment', fileToUpload);
+    let res = await fetch(
+      'http://192.168.69.87:8080/upload',
+      {
+        method: 'post',
+        body: data,
+        headers: {
+          'Content-Type': 'multipart/form-data; ',
+        },
+      }
+    );
+    let responseJson = await res.json();
+    if (responseJson.status == 1) {
+      console.log('Upload Successful');
+    }
+  } else {
+    //if no file selected the show alert
+    console.log('Please Select File first');
+  }
+};
+
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: 'black',
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
