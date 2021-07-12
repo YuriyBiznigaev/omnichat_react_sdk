@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2996C3D591E2FCD0EDC827B7 /* libPods-omnichat_react_framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461F5EED200A157A136AF32 /* libPods-omnichat_react_framework.a */; };
+		CECC652B266F5A8F002C3899 /* omnichat_react_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = CECC6529266F5A8F002C3899 /* omnichat_react_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECC6560266F5D81002C3899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC655F266F5D81002C3899 /* ViewController.swift */; };
+		CECE125326986DEA00BC5DDA /* libFBReactNativeSpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE125226986DEA00BC5DDA /* libFBReactNativeSpec.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8461F5EED200A157A136AF32 /* libPods-omnichat_react_framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-omnichat_react_framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECC6526266F5A8F002C3899 /* omnichat_react_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = omnichat_react_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECC6529266F5A8F002C3899 /* omnichat_react_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = omnichat_react_framework.h; sourceTree = "<group>"; };
+		CECC652A266F5A8F002C3899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECC655F266F5D81002C3899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CECE124E26986DEA00BC5DDA /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125026986DEA00BC5DDA /* libDoubleConversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDoubleConversion.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125226986DEA00BC5DDA /* libFBReactNativeSpec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFBReactNativeSpec.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125426986DEA00BC5DDA /* libFlipper-DoubleConversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-DoubleConversion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125626986DEA00BC5DDA /* libFlipper-Folly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-Folly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125826986DEA00BC5DDA /* libFlipper-Glog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-Glog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125A26986DEA00BC5DDA /* libFlipper-PeerTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-PeerTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125C26986DEA00BC5DDA /* libFlipper-RSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-RSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE125E26986DEA00BC5DDA /* libFlipper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlipper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126026986DEA00BC5DDA /* libFlipperKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlipperKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126226986DEA00BC5DDA /* libglog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126426986DEA00BC5DDA /* liblibevent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibevent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126626986DEA00BC5DDA /* libRCT-Folly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libRCT-Folly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126826986DEA00BC5DDA /* libRCTTypeSafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTTypeSafety.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126A26986DEA00BC5DDA /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126C26986DEA00BC5DDA /* libReact-CoreModules.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-CoreModules.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE126E26986DEA00BC5DDA /* libReact-cxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-cxxreact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127026986DEA00BC5DDA /* libReact-jsi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127226986DEA00BC5DDA /* libReact-jsiexecutor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsiexecutor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127426986DEA00BC5DDA /* libReact-jsinspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsinspector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127626986DEA00BC5DDA /* libreact-native-camera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-camera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127826986DEA00BC5DDA /* libreact-native-document-picker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-document-picker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127A26986DEA00BC5DDA /* libReact-perflogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-perflogger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127C26986DEA00BC5DDA /* libReact-RCTAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE127E26986DEA00BC5DDA /* libReact-RCTBlob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTBlob.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128026986DEA00BC5DDA /* libReact-RCTImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128226986DEA00BC5DDA /* libReact-RCTLinking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTLinking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128426986DEA00BC5DDA /* libReact-RCTNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128626986DEA00BC5DDA /* libReact-RCTSettings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTSettings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128826986DEA00BC5DDA /* libReact-RCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128A26986DEA00BC5DDA /* libReact-RCTVibration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTVibration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128C26986DEA00BC5DDA /* libReactCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE128E26986DEA00BC5DDA /* libYoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libYoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE129026986DEA00BC5DDA /* libYogaKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libYogaKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE129226986FB400BC5DDA /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECE129426986FD300BC5DDA /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A9A8B95FAF2B2F8698B339 /* Pods-omnichat_react_framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omnichat_react_framework.debug.xcconfig"; path = "Target Support Files/Pods-omnichat_react_framework/Pods-omnichat_react_framework.debug.xcconfig"; sourceTree = "<group>"; };
+		E297D4C309BF10DEFC6966F2 /* Pods-omnichat_react_framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omnichat_react_framework.release.xcconfig"; path = "Target Support Files/Pods-omnichat_react_framework/Pods-omnichat_react_framework.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECC6523266F5A8F002C3899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2996C3D591E2FCD0EDC827B7 /* libPods-omnichat_react_framework.a in Frameworks */,
+				CECE125326986DEA00BC5DDA /* libFBReactNativeSpec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51C3DAA388797B96B7561E6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CECE129426986FD300BC5DDA /* libReact-Core.a */,
+				CECE129226986FB400BC5DDA /* libCocoaAsyncSocket.a */,
+				CECE124E26986DEA00BC5DDA /* libCocoaAsyncSocket.a */,
+				CECE125026986DEA00BC5DDA /* libDoubleConversion.a */,
+				CECE125226986DEA00BC5DDA /* libFBReactNativeSpec.a */,
+				CECE125426986DEA00BC5DDA /* libFlipper-DoubleConversion.a */,
+				CECE125626986DEA00BC5DDA /* libFlipper-Folly.a */,
+				CECE125826986DEA00BC5DDA /* libFlipper-Glog.a */,
+				CECE125A26986DEA00BC5DDA /* libFlipper-PeerTalk.a */,
+				CECE125C26986DEA00BC5DDA /* libFlipper-RSocket.a */,
+				CECE125E26986DEA00BC5DDA /* libFlipper.a */,
+				CECE126026986DEA00BC5DDA /* libFlipperKit.a */,
+				CECE126226986DEA00BC5DDA /* libglog.a */,
+				CECE126426986DEA00BC5DDA /* liblibevent.a */,
+				CECE126626986DEA00BC5DDA /* libRCT-Folly.a */,
+				CECE126826986DEA00BC5DDA /* libRCTTypeSafety.a */,
+				CECE126A26986DEA00BC5DDA /* libReact-Core.a */,
+				CECE126C26986DEA00BC5DDA /* libReact-CoreModules.a */,
+				CECE126E26986DEA00BC5DDA /* libReact-cxxreact.a */,
+				CECE127026986DEA00BC5DDA /* libReact-jsi.a */,
+				CECE127226986DEA00BC5DDA /* libReact-jsiexecutor.a */,
+				CECE127426986DEA00BC5DDA /* libReact-jsinspector.a */,
+				CECE127626986DEA00BC5DDA /* libreact-native-camera.a */,
+				CECE127826986DEA00BC5DDA /* libreact-native-document-picker.a */,
+				CECE127A26986DEA00BC5DDA /* libReact-perflogger.a */,
+				CECE127C26986DEA00BC5DDA /* libReact-RCTAnimation.a */,
+				CECE127E26986DEA00BC5DDA /* libReact-RCTBlob.a */,
+				CECE128026986DEA00BC5DDA /* libReact-RCTImage.a */,
+				CECE128226986DEA00BC5DDA /* libReact-RCTLinking.a */,
+				CECE128426986DEA00BC5DDA /* libReact-RCTNetwork.a */,
+				CECE128626986DEA00BC5DDA /* libReact-RCTSettings.a */,
+				CECE128826986DEA00BC5DDA /* libReact-RCTText.a */,
+				CECE128A26986DEA00BC5DDA /* libReact-RCTVibration.a */,
+				CECE128C26986DEA00BC5DDA /* libReactCommon.a */,
+				CECE128E26986DEA00BC5DDA /* libYoga.a */,
+				CECE129026986DEA00BC5DDA /* libYogaKit.a */,
+				8461F5EED200A157A136AF32 /* libPods-omnichat_react_framework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CECC651C266F5A8F002C3899 = {
+			isa = PBXGroup;
+			children = (
+				CECC6528266F5A8F002C3899 /* omnichat_react_framework */,
+				CECC6527266F5A8F002C3899 /* Products */,
+				EAE3BEC757BABC57D5FE53F8 /* Pods */,
+				51C3DAA388797B96B7561E6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CECC6527266F5A8F002C3899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECC6526266F5A8F002C3899 /* omnichat_react_framework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECC6528266F5A8F002C3899 /* omnichat_react_framework */ = {
+			isa = PBXGroup;
+			children = (
+				CECC6529266F5A8F002C3899 /* omnichat_react_framework.h */,
+				CECC652A266F5A8F002C3899 /* Info.plist */,
+				CECC655F266F5D81002C3899 /* ViewController.swift */,
+			);
+			path = omnichat_react_framework;
+			sourceTree = "<group>";
+		};
+		EAE3BEC757BABC57D5FE53F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9A8B95FAF2B2F8698B339 /* Pods-omnichat_react_framework.debug.xcconfig */,
+				E297D4C309BF10DEFC6966F2 /* Pods-omnichat_react_framework.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CECC6521266F5A8F002C3899 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECC652B266F5A8F002C3899 /* omnichat_react_framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CECC6525266F5A8F002C3899 /* omnichat_react_framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECC652E266F5A8F002C3899 /* Build configuration list for PBXNativeTarget "omnichat_react_framework" */;
+			buildPhases = (
+				C05744939180830E16EDD2A8 /* [CP] Check Pods Manifest.lock */,
+				CECC6521266F5A8F002C3899 /* Headers */,
+				CECC6522266F5A8F002C3899 /* Sources */,
+				CECC6523266F5A8F002C3899 /* Frameworks */,
+				CECC6524266F5A8F002C3899 /* Resources */,
+				D74090BAB1FC3EBDE1386383 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = omnichat_react_framework;
+			productName = omnichat_react_framework;
+			productReference = CECC6526266F5A8F002C3899 /* omnichat_react_framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECC651D266F5A8F002C3899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CECC6525266F5A8F002C3899 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = CECC6520266F5A8F002C3899 /* Build configuration list for PBXProject "omnichat_react_framework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CECC651C266F5A8F002C3899;
+			productRefGroup = CECC6527266F5A8F002C3899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECC6525266F5A8F002C3899 /* omnichat_react_framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECC6524266F5A8F002C3899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C05744939180830E16EDD2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-omnichat_react_framework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74090BAB1FC3EBDE1386383 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-omnichat_react_framework/Pods-omnichat_react_framework-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-omnichat_react_framework/Pods-omnichat_react_framework-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-omnichat_react_framework/Pods-omnichat_react_framework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECC6522266F5A8F002C3899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECC6560266F5D81002C3899 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CECC652C266F5A8F002C3899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CECC652D266F5A8F002C3899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CECC652F266F5A8F002C3899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A9A8B95FAF2B2F8698B339 /* Pods-omnichat_react_framework.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3T29VP2888;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = omnichat_react_framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.rt.omnichat-react-framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CECC6530266F5A8F002C3899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E297D4C309BF10DEFC6966F2 /* Pods-omnichat_react_framework.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3T29VP2888;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = omnichat_react_framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.rt.omnichat-react-framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECC6520266F5A8F002C3899 /* Build configuration list for PBXProject "omnichat_react_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECC652C266F5A8F002C3899 /* Debug */,
+				CECC652D266F5A8F002C3899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECC652E266F5A8F002C3899 /* Build configuration list for PBXNativeTarget "omnichat_react_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECC652F266F5A8F002C3899 /* Debug */,
+				CECC6530266F5A8F002C3899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECC651D266F5A8F002C3899 /* Project object */;
+}

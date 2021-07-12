@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'omnichat_sdk_react_native' do
+target 'omnichat_react_framework' do
   config = use_native_modules!
 
   use_react_native!(
@@ -11,11 +11,6 @@ target 'omnichat_sdk_react_native' do
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => false
   )
-
-  target 'omnichat_sdk_react_nativeTests' do
-    inherit! :complete
-    # Pods for testing
-  end
 
   # Enables Flipper.
   #

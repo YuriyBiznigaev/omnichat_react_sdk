@@ -1,14 +1,19 @@
 //
 //  ViewController.swift
-//  omnichat_sdk_react_native
+//  omnichat_react_framework
 //
-//  Created by Hex on 18.05.2021.
+//  Created by Hex on 08.06.2021.
 //
 
 import UIKit
 
 import React
 
+public class Sum {
+    public static func plus(a : Int, b: Int) -> Int {
+        return a + b
+    }
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -22,8 +27,8 @@ class ViewController: UIViewController {
                                                         in: .userDomainMask)[0].appendingPathComponent("index.bundle")
 
         let urlString = "http://192.168.69.87:80/main.jsbundle"
-        
-        
+
+
 
         NSLog(urlString)
         NSLog(path.absoluteString)
@@ -50,8 +55,8 @@ class ViewController: UIViewController {
             }.resume()
         }
     }
-    
-    
+
+
     @IBAction func start(_ sender: UIButton) {
         let path = URL(string: "http://192.168.69.99:8081/index.bundle?platform=ios")
 //        let path = FileManager.default.urls(for: .documentDirectory,
@@ -74,4 +79,5 @@ class ViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
 }
+
 

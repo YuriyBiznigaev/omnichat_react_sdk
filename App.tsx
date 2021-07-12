@@ -137,23 +137,28 @@ let uploadImage = async (singleFile: DocumentPickerResponse) => {
   if (singleFile != null) {
     //If file selected then create FormData
     const fileToUpload = singleFile;
-    const data = new FormData();
-    data.append('name', fileToUpload.name);
-    data.append('file_attachment', fileToUpload);
-    let res = await fetch(
-      'http://192.168.69.87:8080/upload',
-      {
-        method: 'post',
-        body: data,
-        headers: {
-          'Content-Type': 'multipart/form-data; ',
-        },
-      }
-    );
-    let responseJson = await res.json();
-    if (responseJson.status == 1) {
-      console.log('Upload Successful');
-    }
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://192.168.69.72:8080/upload');
+    let formData = new FormData();
+    formData.append('file_attachment', { ...fileToUpload, name: fileToUpload.name})
+    xhr.send(formData);
+    // const data = new FormData();
+    // data.append('name', fileToUpload.name);
+    // data.append('file_attachment', fileToUpload);
+    // let res = await fetch(
+    //   'http://192.168.69.72:8080/upload',
+    //   {
+    //     method: 'post',
+    //     body: data,
+    //     headers: {
+    //       'Content-Type': 'multipart/form-data; ',
+    //     },
+    //   }
+    // );
+    // let responseJson = await res.json();
+    // if (responseJson.status == 1) {
+    //   console.log('Upload Successful');
+    // }
   } else {
     //if no file selected the show alert
     console.log('Please Select File first');
