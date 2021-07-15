@@ -1,6 +1,7 @@
 /**
  * @format
  */
+//import './shared/build/js/packages/shared/kotlin/shared';
 
 import {AppRegistry} from 'react-native';
 import App from './App';
